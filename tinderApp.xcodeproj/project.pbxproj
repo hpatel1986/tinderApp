@@ -7,17 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		732A231D207182DE00D93633 /* CardsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A231C207182DE00D93633 /* CardsViewController.swift */; };
+		732A231F207182F100D93633 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 732A231E207182F100D93633 /* ProfileViewController.swift */; };
 		73600E8F206F14270081A387 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73600E8E206F14270081A387 /* AppDelegate.swift */; };
-		73600E91206F14270081A387 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73600E90206F14270081A387 /* ViewController.swift */; };
 		73600E94206F14270081A387 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73600E92206F14270081A387 /* Main.storyboard */; };
 		73600E96206F14270081A387 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73600E95206F14270081A387 /* Assets.xcassets */; };
 		73600E99206F14270081A387 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73600E97206F14270081A387 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		732A231C207182DE00D93633 /* CardsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardsViewController.swift; sourceTree = "<group>"; };
+		732A231E207182F100D93633 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		73600E8B206F14270081A387 /* tinderApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tinderApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73600E8E206F14270081A387 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73600E90206F14270081A387 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		73600E93206F14270081A387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		73600E95206F14270081A387 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73600E98206F14270081A387 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -55,11 +57,12 @@
 			isa = PBXGroup;
 			children = (
 				73600E8E206F14270081A387 /* AppDelegate.swift */,
-				73600E90206F14270081A387 /* ViewController.swift */,
 				73600E92206F14270081A387 /* Main.storyboard */,
 				73600E95206F14270081A387 /* Assets.xcassets */,
 				73600E97206F14270081A387 /* LaunchScreen.storyboard */,
 				73600E9A206F14280081A387 /* Info.plist */,
+				732A231C207182DE00D93633 /* CardsViewController.swift */,
+				732A231E207182F100D93633 /* ProfileViewController.swift */,
 			);
 			path = tinderApp;
 			sourceTree = "<group>";
@@ -136,7 +139,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73600E91206F14270081A387 /* ViewController.swift in Sources */,
+				732A231F207182F100D93633 /* ProfileViewController.swift in Sources */,
+				732A231D207182DE00D93633 /* CardsViewController.swift in Sources */,
 				73600E8F206F14270081A387 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

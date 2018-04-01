@@ -1,24 +1,145 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="D1I-Ph-tXD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Cards View Controller-->
+        <scene sceneID="n76-OS-q4Q">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                <viewController storyboardIdentifier="cardView" id="D1I-Ph-tXD" customClass="CardsViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Ad-eo-E6N">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar" translatesAutoresizingMaskIntoConstraints="NO" id="5Xn-V4-a4D">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="77" id="ljN-3n-ZQZ"/>
+                                    <constraint firstAttribute="width" constant="414" id="xOj-em-Liy"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xpr-et-guj" customClass="UIImageView">
+                                <rect key="frame" x="39" y="85" width="297" height="362"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="bX1-fA-iqP">
+                                        <rect key="frame" x="4" y="0.0" width="328" height="362"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.92868215379999997" green="0.60484838679999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="tintColor" red="1" green="0.12720304120000001" blue="0.12451911659999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <gestureRecognizers/>
+                                    </imageView>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="336" id="50G-Gs-8p7"/>
+                                    <constraint firstAttribute="height" constant="362" id="wpJ-Wu-mlz"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ny9-8k-PBk" appends="YES" id="sDV-2R-OhF"/>
+                                    <outletCollection property="gestureRecognizers" destination="aUN-Wz-e0d" appends="YES" id="VxC-J4-2dg"/>
+                                </connections>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="action_buttons" translatesAutoresizingMaskIntoConstraints="NO" id="fQI-Ea-Hta">
+                                <rect key="frame" x="47" y="526" width="281" height="108"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="108" id="IQn-3h-5Qk"/>
+                                    <constraint firstAttribute="width" constant="320" id="ODJ-dS-VeI"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <constraints>
+                            <constraint firstItem="fQI-Ea-Hta" firstAttribute="leading" secondItem="m0N-AR-HvJ" secondAttribute="leading" constant="47" id="0lu-v6-C7o"/>
+                            <constraint firstItem="Xpr-et-guj" firstAttribute="top" secondItem="5Xn-V4-a4D" secondAttribute="bottom" constant="8" id="LEE-ce-7Dz"/>
+                            <constraint firstItem="5Xn-V4-a4D" firstAttribute="trailing" secondItem="m0N-AR-HvJ" secondAttribute="trailing" id="NIG-hB-gmg"/>
+                            <constraint firstItem="m0N-AR-HvJ" firstAttribute="trailing" secondItem="Xpr-et-guj" secondAttribute="trailing" constant="39" id="OyI-EB-d7O"/>
+                            <constraint firstItem="m0N-AR-HvJ" firstAttribute="bottom" secondItem="fQI-Ea-Hta" secondAttribute="bottom" constant="33" id="VB4-MT-7Wh"/>
+                            <constraint firstItem="5Xn-V4-a4D" firstAttribute="top" secondItem="6Ad-eo-E6N" secondAttribute="top" id="WBn-CD-rbC"/>
+                            <constraint firstItem="m0N-AR-HvJ" firstAttribute="trailing" secondItem="fQI-Ea-Hta" secondAttribute="trailing" constant="47" id="Z2n-DC-Qhw"/>
+                            <constraint firstItem="Xpr-et-guj" firstAttribute="leading" secondItem="m0N-AR-HvJ" secondAttribute="leading" constant="39" id="cV3-09-1Jg"/>
+                            <constraint firstItem="5Xn-V4-a4D" firstAttribute="leading" secondItem="m0N-AR-HvJ" secondAttribute="leading" id="dqf-Wk-E7s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="m0N-AR-HvJ"/>
                     </view>
+                    <connections>
+                        <outlet property="cardView" destination="Xpr-et-guj" id="1h3-cz-uxq"/>
+                        <segue destination="6jZ-jp-kni" kind="presentation" identifier="profileSegue" id="Xzv-B5-6jq"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="phi-Zy-L1f" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="eyM-V2-Ck6">
+                    <connections>
+                        <action selector="didPanCard:" destination="D1I-Ph-tXD" id="pbf-xR-ral"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="ny9-8k-PBk">
+                    <connections>
+                        <action selector="didPanCardView:" destination="D1I-Ph-tXD" id="jzB-ww-0OK"/>
+                    </connections>
+                </panGestureRecognizer>
+                <tapGestureRecognizer id="aUN-Wz-e0d">
+                    <connections>
+                        <action selector="onImageTap:" destination="D1I-Ph-tXD" id="d5Z-rh-Lt4"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="33.423913043478265"/>
+        </scene>
+        <!--Profile View Controller-->
+        <scene sceneID="eJT-DG-mno">
+            <objects>
+                <viewController id="6jZ-jp-kni" customClass="ProfileViewController" customModule="Tinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iAR-eE-EQq" customClass="UIImageView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav_bar2" translatesAutoresizingMaskIntoConstraints="NO" id="Uqm-87-lKx">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="89"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="Pe1-RW-w97"/>
+                                    <constraint firstAttribute="height" constant="89" id="ZJB-Iy-aQ5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ryan" translatesAutoresizingMaskIntoConstraints="NO" id="9Zz-Iv-iX9">
+                                <rect key="frame" x="43" y="97" width="329" height="330"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkT-23-gSk">
+                                <rect key="frame" x="0.0" y="44" width="66" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="tapDone:" destination="6jZ-jp-kni" eventType="touchUpInside" id="Ske-vO-CYz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Uqm-87-lKx" firstAttribute="trailing" secondItem="Rop-Tb-Byo" secondAttribute="trailing" id="Jna-ol-Vbd"/>
+                            <constraint firstItem="Uqm-87-lKx" firstAttribute="leading" secondItem="Rop-Tb-Byo" secondAttribute="leading" id="Zbm-AY-AjR"/>
+                            <constraint firstItem="Uqm-87-lKx" firstAttribute="top" secondItem="iAR-eE-EQq" secondAttribute="top" id="smx-Pb-gZn"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Rop-Tb-Byo"/>
+                    </view>
+                    <connections>
+                        <outlet property="profileImage" destination="iAR-eE-EQq" id="fAc-li-eWn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93J-9O-57U" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895.6521739130435" y="32.608695652173914"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="action_buttons" width="320" height="108"/>
+        <image name="nav_bar" width="320" height="65"/>
+        <image name="nav_bar2" width="320" height="65"/>
+        <image name="ryan" width="449" height="514"/>
+    </resources>
 </document>
